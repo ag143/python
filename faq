@@ -1,1 +1,13 @@
-https://pexpect.readthedocs.io/en/stable/overview.html#pexpect-on-windows
+-->Pexpect work in linux not in windows
+
+A) https://pexpect.readthedocs.io/en/stable/overview.html#pexpect-on-windows
+
+-->Pexpect.sapwn returns ouput empty sometimes in linux with below code.
+  child = pexpect.spawn('ls -l')
+  child.expect(pexpect.EOF)
+  output = child.before
+  print output
+A)  https://www.python.org/dev/peps/pep-0263/
+
+-->
+
