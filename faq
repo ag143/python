@@ -9,5 +9,6 @@ A) https://pexpect.readthedocs.io/en/stable/overview.html#pexpect-on-windows
   print output
 A)  https://www.python.org/dev/peps/pep-0263/
 
--->
+--> difference in code from python 2.7.x to 3.x
+a) https://pexpect.readthedocs.io/en/stable/api/pexpect.html
 
