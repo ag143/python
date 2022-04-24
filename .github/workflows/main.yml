@@ -35,6 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           pwd
+          ls -l
           cd  .. 
+          ls -l
           pwd
           sh ./singlexecution.sh
