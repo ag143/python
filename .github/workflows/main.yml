@@ -38,5 +38,6 @@ jobs:
           ls -l
           pwd
           chmod +x singleexecution.sh
-          chmod +x . 
+          chmod +x output.txt
+          chmod +x introduction.py
           sh singleexecution.sh > output.txt
