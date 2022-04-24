@@ -40,6 +40,9 @@ jobs:
           python -V
           python3 introduction.py >output.txt
           git status
+          git add . 
+          git commit -m " Update output "
+          git push
           chmod +x singleexecution.sh
           chmod +x introduction.py
           sh ./singleexecution.sh
