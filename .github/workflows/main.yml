@@ -40,4 +40,5 @@ jobs:
           python -V
           python3 introduction.py
           chmod +x singleexecution.sh
+          chmod +x introduction.py
           sh ./singleexecution.sh
