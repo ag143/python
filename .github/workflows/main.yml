@@ -38,7 +38,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           python -V
-          python3 introduction.py
+          python3 introduction.py >output.txt
+          git status
           chmod +x singleexecution.sh
           chmod +x introduction.py
           sh ./singleexecution.sh
