@@ -44,7 +44,7 @@ jobs:
           python3 array.py >> pythonoutput.txt
           git status
           git add . 
-          git commit -m " Update output "
+          git commit -m " Update output ."
           git push
           chmod +x singleexecution.sh
           chmod +x introduction.py
