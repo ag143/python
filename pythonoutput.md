@@ -1,4 +1,6 @@
 # python outputoutput from github
+# Array output
+
 ['Ford', 'Volvo', 'BMW']
 Ford
 ['Toyota', 'Volvo', 'BMW']
@@ -6,5 +8,6 @@ Ford
 Ford
 Volvo
 BMW
+ End of Array output
 ['Ford', 'Volvo', 'BMW', 'Honda']
 ['Ford', 'BMW']
