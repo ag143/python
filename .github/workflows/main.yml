@@ -38,4 +38,4 @@ jobs:
           ls -l
           pwd
           chmod +x singleexecution.sh
-          sh ./singlexecution.sh
+          sh singlexecution.sh
