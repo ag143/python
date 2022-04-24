@@ -37,4 +37,4 @@ jobs:
           pwd
           cd  .. 
           pwd
-          ./singlexecution.sh
+          sh ./singlexecution.sh
