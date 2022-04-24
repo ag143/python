@@ -36,7 +36,6 @@ jobs:
           echo test, and deploy your project.
           pwd
           ls -l
-          cd  .. 
-          ls -l
           pwd
+          chmod +x singlexecution.sh
           sh ./singlexecution.sh
