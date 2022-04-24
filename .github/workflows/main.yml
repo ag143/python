@@ -40,8 +40,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           python -V
-          python3 introduction.py >output.txt
-          python3 array.py >> output.txt
+          python3 introduction.py >pythonoutput.md
+          python3 array.py >> pythonoutput.txt
           git status
           git add . 
           git commit -m " Update output "
