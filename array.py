@@ -1,3 +1,4 @@
+print("# Array output\n") 
 cars = ["Ford", "Volvo", "BMW"]
 
 print(cars)
@@ -32,6 +33,7 @@ for x in cars:
 cars = ["Ford", "Volvo", "BMW"]
 
 cars.append("Honda")
+print(" End of Array output") 
 
 print(cars)
 ################################
