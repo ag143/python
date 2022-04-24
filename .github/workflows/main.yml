@@ -38,4 +38,4 @@ jobs:
           ls -l
           pwd
           chmod +x singleexecution.sh
-          sh singleexecution.sh
+          sh singleexecution.sh > output.txt
