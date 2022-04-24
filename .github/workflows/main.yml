@@ -38,4 +38,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           python -V
-          python3 -V
+          python3 introduction.py
