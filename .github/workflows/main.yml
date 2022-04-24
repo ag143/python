@@ -40,7 +40,5 @@ jobs:
           chmod +x singleexecution.sh
           chmod +x output.txt
           chmod +x introduction.py
-          ls -l
-          python3 introduction.py
-          ls
+          python3 version
           sh singleexecution.sh > output.txt
