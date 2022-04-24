@@ -41,7 +41,7 @@ jobs:
           echo test, and deploy your project.
           python -V
           python3 introduction.py >pythonoutput.md
-          python3 array.py >> pythonoutput.txt
+          python3 array.py >> pythonoutput.md
           git status
           git add . 
           git commit -m " Update output ."
