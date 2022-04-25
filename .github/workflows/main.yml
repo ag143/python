@@ -35,7 +35,7 @@ jobs:
           python -V
           python3 introduction.py >pythonoutput.md
           python3 array.py >> pythonoutput.md
-          python3 daterimetest.py
+          python3 datetimetest.py
           git status
           git add . 
           git commit -m " Update output ."
