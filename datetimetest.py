@@ -2,7 +2,7 @@ import datetime as dt
 from datetime import datetime 
 
 x = datetime.now()
-
+print("# using Python Date functions")
 print(x)
 print("# ####################")
 
