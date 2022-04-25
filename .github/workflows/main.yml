@@ -40,6 +40,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           python -V
+          pip install flake8 pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           python3 introduction.py >pythonoutput.md
           python3 array.py >> pythonoutput.md
           python3 Readjsonviaapi.py >> pythonoutput.md
