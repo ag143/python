@@ -1,13 +1,1 @@
 # python outputoutput from github
-# Array output
-
-['Ford', 'Volvo', 'BMW']
-Ford
-['Toyota', 'Volvo', 'BMW']
-3
-Ford
-Volvo
-BMW
- End of Array output
-['Ford', 'Volvo', 'BMW', 'Honda']
-['Ford', 'BMW']
