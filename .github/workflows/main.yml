@@ -52,24 +52,24 @@ jobs:
           #python3 interview.py >>pythonoutput.md
           python3 introduction.py >>pythonoutput.md
           #python3 iterator.py >>pythonoutput.md
-          python3 json.py >>pythonoutput.md
-          python3 lambda.py >>pythonoutput.md
-          python3 lists.py >>pythonoutput.md
-          python3 mathtest.py >>pythonoutput.md
-          python3 modules.py >>pythonoutput.md
-          python3 mongodb.py >>pythonoutput.md
-          python3 mysql.py >>pythonoutput.md
-          python3 numbers.py >>pythonoutput.md
-          python3 operators.py >>pythonoutput.md
-          python3 readdatajson.py >>pythonoutput.md
-          python3 regex.py >>pythonoutput.md
-          python3 sets.py >>pythonoutput.md
-          python3 strings.py >>pythonoutput.md
-          python3 syntax.py >>pythonoutput.md
-          python3 tryexcept.py >>pythonoutput.md
-          python3 tuples.py >>pythonoutput.md
-          python3 variables.py >>pythonoutput.md
-          python3 while.py >>pythonoutput.md
+          #python3 json.py >>pythonoutput.md
+          #python3 lambda.py >>pythonoutput.md
+          #python3 lists.py >>pythonoutput.md
+          #python3 mathtest.py >>pythonoutput.md
+          #python3 modules.py >>pythonoutput.md
+          #python3 mongodb.py >>pythonoutput.md
+          #python3 mysql.py >>pythonoutput.md
+          #python3 numbers.py >>pythonoutput.md
+          #python3 operators.py >>pythonoutput.md
+          #python3 readdatajson.py >>pythonoutput.md
+          #python3 regex.py >>pythonoutput.md
+          #python3 sets.py >>pythonoutput.md
+          #python3 strings.py >>pythonoutput.md
+          #python3 syntax.py >>pythonoutput.md
+          #python3 tryexcept.py >>pythonoutput.md
+          #python3 tuples.py >>pythonoutput.md
+          #python3 variables.py >>pythonoutput.md
+          #python3 while.py >>pythonoutput.md
           git status
           git add . 
           git commit -m " Update output ."
