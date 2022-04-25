@@ -11,7 +11,8 @@ BMW
  End of Array output
 ['Ford', 'Volvo', 'BMW', 'Honda']
 ['Ford', 'BMW']
-2022-04-25 16:28:21.732028
+# using Python Date functions
+2022-04-25 16:31:28.685320
 # ####################
 2022
 Monday
