@@ -4,24 +4,24 @@ from datetime import datetime
 x = datetime.now()
 
 print(x)
-print("#####################")
+print("# ####################")
 
 
 x = datetime.now()
 
 print(x.year)
 print(x.strftime("%A"))
-print("#####################")
+print("# ####################")
 
 
 x = datetime(2020, 5, 17)
 
 print(x)
 
-print("#####################")
+print("# ####################")
 #from datetime import _datetime
 
 x = datetime(2018, 6, 1)
 
 print(x.strftime("%B"))
-print("#####################")
+print("# ####################")
