@@ -1,6 +1,6 @@
 import camelcase as cl
 
-c = camelcase.()
+c = camelcase()
 
 txt = "lorem ipsum dolor sit amet"
 
