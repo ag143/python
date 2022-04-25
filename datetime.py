@@ -1,26 +1,26 @@
-import datetime
+from datetime import datetime 
 
 x = datetime.datetime.now()
 
 print(x)
-#####################
-import datetime
+print("#####################")
+from datetime import datetime
 
 x = datetime.datetime.now()
 
 print(x.year)
 print(x.strftime("%A"))
-######################
-import datetime
+print("#####################")
+from datetime import datetime
 
 x = datetime.datetime(2020, 5, 17)
 
 print(x)
 
-#########################
-import datetime
+print("#####################")
+from datetime import datetime
 
 x = datetime.datetime(2018, 6, 1)
 
 print(x.strftime("%B"))
-###########################
+print("#####################")
