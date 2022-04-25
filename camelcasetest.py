@@ -1,4 +1,4 @@
-from camelcase as cc
+import camelcase as cc
 
 c = camelcase()
 
