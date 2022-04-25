@@ -1,6 +1,6 @@
-import camelcase
+import camelcase as cl
 
-c = camelcase.CamelCase()
+c = camelcase.()
 
 txt = "lorem ipsum dolor sit amet"
 
