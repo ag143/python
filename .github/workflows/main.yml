@@ -36,6 +36,41 @@ jobs:
           python3 introduction.py >pythonoutput.md
           python3 array.py >> pythonoutput.txt
           python3 array.py >> pythonoutput.md
+          python3 array.py >>pythonoutput.md
+          python3 Update array.py >>pythonoutput.md
+          python3 camelcase.py >>pythonoutput.md
+          python3 casting.py >>pythonoutput.md
+          python3 classobjects.py >>pythonoutput.md
+          python3 datetime.py >>pythonoutput.md
+          python3 dictionary.py >>pythonoutput.md
+          python3 filehandling.py >>pythonoutput.md
+          python3 forloop.py >>pythonoutput.md
+          python3 functions.py >>pythonoutput.md
+          python3 helloworld.py >>pythonoutput.md
+          python3 ifelse.py >>pythonoutput.md
+          python3 interview.py >>pythonoutput.md
+          python3 introduction.py >>pythonoutput.md
+          python3 Update introduction.py >>pythonoutput.md
+          python3 iterator.py >>pythonoutput.md
+          python3 json.py >>pythonoutput.md
+          python3 lambda.py >>pythonoutput.md
+          python3 lists.py >>pythonoutput.md
+          python3 math.py >>pythonoutput.md
+          python3 modules.py >>pythonoutput.md
+          python3 mongodb.py >>pythonoutput.md
+          python3 mysql.py >>pythonoutput.md
+          python3 numbers.py >>pythonoutput.md
+          python3 operators.py >>pythonoutput.md
+          python3 readdatajson.py >>pythonoutput.md
+          python3 Create readdatajson.py >>pythonoutput.md
+          python3 regex.py >>pythonoutput.md
+          python3 sets.py >>pythonoutput.md
+          python3 strings.py >>pythonoutput.md
+          python3 syntax.py >>pythonoutput.md
+          python3 tryexcept.py >>pythonoutput.md
+          python3 tuples.py >>pythonoutput.md
+          python3 variables.py >>pythonoutput.md
+          python3 while.py >>pythonoutput.md
           git status
           git add . 
           git commit -m " Update output ."
