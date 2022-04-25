@@ -25,7 +25,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r datetime
+          pip install -r math
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
@@ -37,7 +38,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           python -V
-          python -m pip install -r requirements.txt
           python3 introduction.py >pythonoutput.md
           python3 array.py >> pythonoutput.txt
           pip3 install math
