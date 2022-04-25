@@ -49,7 +49,7 @@ jobs:
           python3 functions.py >>pythonoutput.md
           python3 helloworld.py >>pythonoutput.md
           python3 ifelse.py >>pythonoutput.md
-          python3 interview.py >>pythonoutput.md
+          #python3 interview.py >>pythonoutput.md
           python3 introduction.py >>pythonoutput.md
           python3 iterator.py >>pythonoutput.md
           python3 json.py >>pythonoutput.md
