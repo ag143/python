@@ -1,4 +1,4 @@
-import camelcase
+from camelcase import CamelCase
 
 c = camelcase()
 
