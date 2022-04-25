@@ -1,5 +1,5 @@
 # import urllib library 
-
+print("# read json data via API")
 from urllib.request import urlopen 
 
   
