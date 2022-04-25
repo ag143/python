@@ -51,11 +51,10 @@ jobs:
           python3 ifelse.py >>pythonoutput.md
           #python3 interview.py >>pythonoutput.md
           python3 introduction.py >>pythonoutput.md
-          python3 iterator.py >>pythonoutput.md
+          #python3 iterator.py >>pythonoutput.md
           python3 json.py >>pythonoutput.md
           python3 lambda.py >>pythonoutput.md
           python3 lists.py >>pythonoutput.md
-          python3 mathtest.py >>pythonoutput.md
           python3 mathtest.py >>pythonoutput.md
           python3 modules.py >>pythonoutput.md
           python3 mongodb.py >>pythonoutput.md
