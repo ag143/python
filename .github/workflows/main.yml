@@ -40,6 +40,7 @@ jobs:
           python -m pip install -r requirements.txt
           python3 introduction.py >pythonoutput.md
           python3 array.py >> pythonoutput.txt
+          pip3 install math
           # python3 datetimetest.py >>pythonoutput.md
           git status
           git add . 
