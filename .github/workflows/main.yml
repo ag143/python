@@ -68,8 +68,8 @@ jobs:
           #python3 syntax.py >>pythonoutput.md
           #python3 tryexcept.py >>pythonoutput.md
           #python3 tuples.py >>pythonoutput.md
-          #python3 variables.py >>pythonoutput.md
-          #python3 while.py >>pythonoutput.md
+          python3 variables.py >>pythonoutput.md
+          python3 while.py >>pythonoutput.md
           git status
           git add . 
           git commit -m " Update output ."
