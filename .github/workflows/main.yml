@@ -59,15 +59,15 @@ jobs:
           #python3 modules.py >>pythonoutput.md
           #python3 mongodb.py >>pythonoutput.md
           #python3 mysql.py >>pythonoutput.md
-          #python3 numbers.py >>pythonoutput.md
-          #python3 operators.py >>pythonoutput.md
+          python3 numbers.py >>pythonoutput.md
+          python3 operators.py >>pythonoutput.md
           #python3 readdatajson.py >>pythonoutput.md
           #python3 regex.py >>pythonoutput.md
           #python3 sets.py >>pythonoutput.md
           python3 strings.py >>pythonoutput.md
           python3 syntax.py >>pythonoutput.md
           #python3 tryexcept.py >>pythonoutput.md
-          python3 tuples.py >>pythonoutput.md
+          #python3 tuples.py >>pythonoutput.md
           python3 variables.py >>pythonoutput.md
           python3 while.py >>pythonoutput.md
           git status
