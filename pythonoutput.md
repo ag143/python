@@ -23,10 +23,10 @@ s1
 2
 3.0
 # using Python Date functions
-2022-04-25 17:02:42.590158
+2022-04-26 01:05:47.341712
 # ####################
 2022
-Monday
+Tuesday
 # ####################
 2020-05-17 00:00:00
 # ####################
@@ -119,3 +119,22 @@ B
 Both conditions are True
 At least one of the conditions is True
 # python outputoutput from github
+******************************start program*********************************
+5
+John
+Python is awesome
+Python is awesome
+******************************end program*********************************
+1
+2
+3
+4
+5
+1
+2
+3
+1
+2
+4
+5
+6
