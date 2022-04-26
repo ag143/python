@@ -23,7 +23,7 @@ s1
 2
 3.0
 # using Python Date functions
-2022-04-26 01:05:47.341712
+2022-04-26 01:07:54.399617
 # ####################
 2022
 Tuesday
@@ -119,6 +119,33 @@ B
 Both conditions are True
 At least one of the conditions is True
 # python outputoutput from github
+e
+llo
+Hello, World!
+13
+hello, world!
+HELLO, WORLD!
+Jello, World!
+['Hello', ' World!']
+******************************start program*********************************
+if 5 > 2:
+Five is greater than two!
+above syntax will fail if we wont maintain indentation
+Five is greater than two!
+if 5 > 2:
+    print("Five is greater than two!")
+if 5 > 2:
+        print("Five is greater than two!") 
+Five is greater than two!
+Five is greater than two!
+ below syntax doesnt work
+if 5 > 2:
+ print("Five is greater than two!")
+        print("Five is greater than two!")
+#This is a comment.
+"""This is a
+multiline docstring."""
+******************************end program*********************************
 ******************************start program*********************************
 5
 John
