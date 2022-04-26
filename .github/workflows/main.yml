@@ -66,7 +66,7 @@ jobs:
           #python3 sets.py >>pythonoutput.md
           python3 strings.py >>pythonoutput.md
           python3 syntax.py >>pythonoutput.md
-          python3 tryexcept.py >>pythonoutput.md
+          #python3 tryexcept.py >>pythonoutput.md
           python3 tuples.py >>pythonoutput.md
           python3 variables.py >>pythonoutput.md
           python3 while.py >>pythonoutput.md
