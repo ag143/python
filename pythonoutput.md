@@ -23,7 +23,7 @@ s1
 2
 3.0
 # using Python Date functions
-2022-04-27 01:35:35.935409
+2022-04-27 01:39:48.582806
 # ####################
 2022
 Wednesday
@@ -140,6 +140,43 @@ B
 Both conditions are True
 At least one of the conditions is True
 # python outputoutput from github
+apple
+banana
+cherry
+b
+a
+n
+a
+n
+a
+apple
+banana
+cherry
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
 ******************************start program*********************************
 <class 'int'>
 <class 'float'>
