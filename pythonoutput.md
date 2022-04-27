@@ -26,7 +26,7 @@ s1
 3.0
 # date and time operations 
 # using Python Date functions
-2022-04-27 01:47:11.960530
+2022-04-27 01:48:09.134643
 # ####################
 2022
 Wednesday
@@ -136,6 +136,7 @@ Python has syntax that allows developers to write programs with fewer lines than
 Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
 Python can be treated in a procedural way, an object-oriented way or a functional way.
 ***************** End program *************************
+# ifelse
 b is greater than a
 a and b are equal
 a is greater than b
