@@ -1,4 +1,4 @@
-#mytuple = ("apple", "banana", "cherry")
+mytuple = ("apple", "banana", "cherry")
 myit = iter(mytuple)
 
 print(next(myit))
