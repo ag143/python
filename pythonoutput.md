@@ -26,7 +26,7 @@ s1
 3.0
 # date and time operations 
 # using Python Date functions
-2022-04-27 01:46:31.935605
+2022-04-27 01:47:11.960530
 # ####################
 2022
 Wednesday
@@ -35,6 +35,7 @@ Wednesday
 # ####################
 June
 # ####################
+# dictionary operations 
 {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
 Mustang
 {'brand': 'Ford', 'model': 'Mustang', 'year': 2018}
