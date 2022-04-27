@@ -42,7 +42,7 @@ jobs:
           python3 camelcasetest.py >>pythonoutput.md
           python3 casting.py >>pythonoutput.md
           #python3 classobjects.py >>pythonoutput.md
-          python3 datetimetest.py >>pythonoutput.md\
+          python3 datetimetest.py >>pythonoutput.md
           python3 dictionary.py >>pythonoutput.md
           #python3 filehandling.py >>pythonoutput.md
           python3 forloop.py >>pythonoutput.md
