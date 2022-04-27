@@ -26,7 +26,7 @@ s1
 3.0
 # date and time operations 
 # using Python Date functions
-2022-04-27 01:49:08.738191
+2022-04-27 01:49:37.370821
 # ####################
 2022
 Wednesday
@@ -92,6 +92,7 @@ big cherry
 tasty apple
 tasty banana
 tasty cherry
+# function 
 Hello from a function
 Emil Refsnes
 Tobias Refsnes
