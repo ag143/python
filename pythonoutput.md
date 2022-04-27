@@ -23,7 +23,7 @@ s1
 2
 3.0
 # using Python Date functions
-2022-04-27 01:39:48.582806
+2022-04-27 01:42:26.625629
 # ####################
 2022
 Wednesday
@@ -140,6 +140,7 @@ B
 Both conditions are True
 At least one of the conditions is True
 # python outputoutput from github
+# python Iteration operation
 apple
 banana
 cherry
