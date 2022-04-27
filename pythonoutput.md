@@ -26,7 +26,7 @@ s1
 3.0
 # date and time operations 
 # using Python Date functions
-2022-04-27 01:49:37.370821
+2022-04-27 01:50:10.576817
 # ####################
 2022
 Wednesday
@@ -57,6 +57,7 @@ Yes, 'model' is one of the keys in the thisdict dictionary
 {'brand': 'Ford', 'year': 1964}
 {}
 {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+# for loop
 apple
 banana
 cherry
