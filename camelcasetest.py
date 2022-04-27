@@ -1,3 +1,4 @@
+print("# camelcase usage")
 import camelcase as cc
 
 c = cc.CamelCase()
