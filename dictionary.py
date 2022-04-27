@@ -1,3 +1,4 @@
+print("# dictionary operations ")
 thisdict =	{
   "brand": "Ford",
   "model": "Mustang",
