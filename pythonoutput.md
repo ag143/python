@@ -23,7 +23,7 @@ s1
 2
 3.0
 # using Python Date functions
-2022-04-27 01:32:02.057077
+2022-04-27 01:34:39.157801
 # ####################
 2022
 Wednesday
@@ -32,6 +32,27 @@ Wednesday
 # ####################
 June
 # ####################
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+Mustang
+{'brand': 'Ford', 'model': 'Mustang', 'year': 2018}
+brand
+model
+year
+Ford
+Mustang
+1964
+Ford
+Mustang
+1964
+brand Ford
+model Mustang
+year 1964
+Yes, 'model' is one of the keys in the thisdict dictionary
+3
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'red'}
+{'brand': 'Ford', 'year': 1964}
+{}
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
 apple
 banana
 cherry
