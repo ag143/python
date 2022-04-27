@@ -1,3 +1,4 @@
+print("# python Iteration operation") 
 mytuple = ("apple", "banana", "cherry")
 myit = iter(mytuple)
 
