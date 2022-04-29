@@ -21,3 +21,10 @@ https://www.python.org/downloads/release/python-3100/
 https://www.python.org/doc/
 https://wiki.python.org/moin/BeginnersGuide
 https://devguide.python.org/
+
+
+https://docs.python.org/3/tutorial/index.html
+https://docs.python.org/3/reference/index.html
+https://docs.python.org/3/library/index.html
+https://docs.python.org/3/using/index.html
+https://docs.python.org/3/contents.html
