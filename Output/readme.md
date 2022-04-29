@@ -1,1 +1,10 @@
-
+- setup
+- Introduction
+- Controlstatements
+- Data structures
+- Modules
+- Input output
+- Errors and exception
+- Classes
+- Standard library
+- Miscellaneous
