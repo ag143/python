@@ -1,5 +1,9 @@
 # readme.md
 
+- [Reference]()
+- [Python Quick Guide](https://github.com/ag143/python/blob/master/python_quick_guide.md)
+- [Python Detail Guide](https://github.com/ag143/python/blob/master/python_detail_guide.md)
+
 https://github.com/fchollet/deep-learning-with-python-notebooks
 https://github.com/ag143/python3-in-one-pic
 https://github.com/zhiwehu/Python-programming-exercises
