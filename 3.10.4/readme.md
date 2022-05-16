@@ -1,6 +1,7 @@
 # 3.10.4 python reference execution
 - [https://docs.python.org/3/reference/index.html](https://docs.python.org/3/reference/index.html)
-- 1. Introduction
+
+1. Introduction
 1.1. Alternate Implementations
 1.2. Notation
 2. Lexical analysis
