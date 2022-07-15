@@ -1,12 +1,12 @@
 """
-将华氏温度转换为摄氏温度
+Convert Fahrenheit to Celsius
 F = 1.8C + 32
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-27
 """
 
-f = float(input('请输入华氏温度: '))
+f = float(input('Please enter the temperature in Fahrenheit: '))
 c = (f - 32) / 1.8
-print('%.1f华氏度 = %.1f摄氏度' % (f, c))
+print('%.1f Fahrenheit = %.1f Celsius' % (f, c))

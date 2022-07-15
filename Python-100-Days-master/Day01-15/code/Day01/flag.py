@@ -1,5 +1,5 @@
 """
-用Python的turtle模块绘制国旗
+用 Python 的 turtle 模 块 绘 制国旗
 """
 import turtle
 

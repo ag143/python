@@ -1,8 +1,8 @@
 """
-使用变量保存数据并进行操作
+Use variables to save data and manipulate it
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-27
 """
 
@@ -11,7 +11,7 @@ b = 123
 print(a + b)
 print(a - b)
 print(a * b)
-print(a / b)
+print(a/b)
 print(a // b)
 print(a % b)
-print(a ** b)
+print(a**b)

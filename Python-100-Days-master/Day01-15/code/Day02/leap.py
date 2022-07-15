@@ -1,13 +1,13 @@
 """
-输入年份 如果是闰年输出True 否则输出False
+Enter the year if it is a leap year, output True, otherwise output False
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-27
 """
 
-year = int(input('请输入年份: '))
-# 如果代码太长写成一行不便于阅读 可以使用\或()折行
+year = int(input('Please enter the year: '))
+# If the code is too long to be written on one line and it is not easy to read, you can use \ or () to wrap the line
 is_leap = (year % 4 == 0 and year % 100 != 0 or
-           year % 400 == 0)
+            year % 400 == 0)
 print(is_leap)

@@ -1,8 +1,8 @@
 """
-检查变量的类型
+Check the type of a variable
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-27
 """
 

@@ -1,22 +1,22 @@
 """
-第一个Python程序 - hello, world!
-向伟大的Dennis M. Ritchie先生致敬
+First Python program - hello, world!
+Tribute to the great Mr. Dennis M. Ritchie
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-26
 
-请将该文件命名为hello.py
+Please name the file hello.py
 
-使用Windows的小伙伴可以在命令行提示下通过下面的命令运行该程序
+Friends using Windows can run the program with the following command at the command line prompt
 python hello.py
 
-对于使用Linux或macOS的小伙伴可以打开终端并键入下面的命令来运行程序
+For those using Linux or macOS, you can open a terminal and type the following command to run the program
 python3 hello.py
 """
 
 print('hello, world!')
-# print("你好,世界！")
-print('你好', '世界')
+# print("Hello, world!")
+print('Hello', 'World')
 print('hello', 'world', sep=', ', end='!')
 print('goodbye, world', end='!\n')
