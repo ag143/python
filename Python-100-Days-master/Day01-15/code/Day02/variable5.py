@@ -1,8 +1,8 @@
 """
-类型转换
+type conversion
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-27
 """
 

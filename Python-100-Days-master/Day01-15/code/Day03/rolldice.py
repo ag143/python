@@ -1,23 +1,23 @@
 """
-掷骰子决定做什么事情
+Roll the dice to decide what to do
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-28
 """
 from random import randint
 
 face = randint(1, 6)
 if face == 1:
-    result = '唱首歌'
+     result = 'clicker'
 elif face == 2:
-    result = '跳个舞'
+     result = 'dance'
 elif face == 3:
-    result = '学狗叫'
+     result = 'Learn to bark'
 elif face == 4:
-    result = '做俯卧撑'
+     result = 'Do push-ups'
 elif face == 5:
-    result = '念绕口令'
+     result = 'recite the tongue twister'
 else:
-    result = '讲冷笑话'
+     result = 'tell a bad joke'
 print(result)

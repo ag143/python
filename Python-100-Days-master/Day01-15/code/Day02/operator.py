@@ -1,8 +1,8 @@
 """
-运算符的使用
+use of operators
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-27
 """
 

@@ -1,8 +1,8 @@
 """
-格式化输出
+formatted output
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-27
 """
 

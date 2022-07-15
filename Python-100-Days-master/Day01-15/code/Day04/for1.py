@@ -1,12 +1,12 @@
 """
-用for循环实现1~100求和
+Use for loop to achieve 1~100 summation
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-03-01
 """
 
 sum = 0
 for x in range(1, 101):
-    sum += x
+     sum += x
 print(sum)

@@ -1,19 +1,19 @@
 """
-用户身份验证
+User authentication
 
 Version: 0.1
-Author: 骆昊
+Author: Luo Hao
 Date: 2018-02-28
 """
 # import getpass
 # from getpass import getpass
 # from getpass import *
 
-username = input('请输入用户名: ')
-password = input('请输入口令: ')
-# 输入口令的时候终端中没有回显
-# password = getpass.getpass('请输入口令: ')
+username = input('Please enter username: ')
+password = input('Please enter the password: ')
+# There is no echo in the terminal when entering the password
+# password = getpass.getpass('Please enter password: ')
 if username == 'admin' and password == '123456':
-    print('身份验证成功!')
+     print('Authentication successful!')
 else:
-    print('身份验证失败!')
+     print('Authentication failed!')
