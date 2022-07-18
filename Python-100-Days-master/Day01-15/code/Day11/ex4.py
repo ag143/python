@@ -1,22 +1,22 @@
 """
-引发异常和异常栈
+Throwing exceptions and exception stack
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-13
 """
 
 
 def f1():
-    raise AssertionError('发生异常')
+     raise AssertionError('An exception occurred')
 
 
 def f2():
-    f1()
+     f1()
 
 
 def f3():
-    f2()
+     f2()
 
 
 f3()

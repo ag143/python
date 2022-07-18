@@ -1,34 +1,34 @@
 """
-作用域问题
+scope problem
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-05
 """
 
 
-# 局部作用域
+# local scope
 def foo1():
-    a = 5
+     a = 5
 
 
 foo1()
-# print(a)  # NameError
+# print(a) # NameError
 
-# 全局作用域
+# global scope
 b = 10
 
 
 def foo2():
-    print(b)
+     print(b)
 
 
 foo2()
 
 
 def foo3():
-    b = 100     # 局部变量
-    print(b)
+     b = 100 # local variable
+     print(b)
 
 
 foo3()
@@ -36,9 +36,9 @@ print(b)
 
 
 def foo4():
-    global b
-    b = 200     # 全局变量
-    print(b)
+     global b
+     b = 200 # global variable
+     print(b)
 
 
 foo4()

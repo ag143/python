@@ -1,8 +1,8 @@
 """
-实例方法和类方法的应用
+Application of instance methods and class methods
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-12
 """
 
@@ -16,36 +16,36 @@ class Triangle(object):
         self._b = b
         self._c = c
 
-    # 静态方法
+    # static method
     @staticmethod
     def is_valid(a, b, c):
         return a + b > c and b + c > a and c + a > b
 
-    # 实例方法
+    # instance method
     def perimeter(self):
         return self._a + self._b + self._c
 
-    # 实例方法
+    # instance method
     def area(self):
         p = self.perimeter() / 2
         return sqrt(p * (p - self._a) * (p - self._b) * (p - self._c))
 
 
 if __name__ == '__main__':
-    # 用字符串的split方法将字符串拆分成一个列表
-    # 再通过map函数对列表中的每个字符串进行映射处理成小数
-    a, b, c = map(float, input('请输入三条边: ').split())
-    # 先判断给定长度的三条边能否构成三角形
-    # 如果能才创建三角形对象
+    # Split the string into a list using the split method of the string
+    # Then use the map function to map each string in the list into decimals
+    a, b, c = map(float, input('Please input three sides: ').split())
+    # First determine whether three sides of a given length can form a triangle
+    # Create a triangle object if you can
     if Triangle.is_valid(a, b, c):
         tri = Triangle(a, b, c)
-        print('周长:', tri.perimeter())
-        print('面积:', tri.area())
-        # 如果传入对象作为方法参数也可以通过类调用实例方法
-        # print('周长:', Triangle.perimeter(tri))
-        # print('面积:', Triangle.area(tri))
-        # 看看下面的代码就知道其实二者本质上是一致的
+        print('Perimeter:', tri.perimeter())
+        print('Area:', tri.area())
+        # If you pass an object as a method parameter, you can also call instance methods through the class
+        # print('Perimeter:', Triangle.perimeter(tri))
+        # print('Area:', Triangle.area(tri))
+        # Look at the following code to know that the two are essentially the same
         # print(type(tri.perimeter))
         # print(type(Triangle.perimeter))
     else:
-        print('不能构成三角形.')
+        print('Cannot form a triangle.')

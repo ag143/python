@@ -1,8 +1,8 @@
 """
-创建进程调用其他程序
+Create a process to call other programs
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-20
 """
 
@@ -10,18 +10,18 @@ import subprocess
 import sys
 
 def main():
-    # 通过sys.argv获取命令行参数
-    if len(sys.argv) > 1:
-        # 第一个命令行参数是程序本身所以从第二个开始取
-        for index in range(1, len(sys.argv)):
-            try:
-                # 通过subprocess模块的call函数启动子进程
-                status = subprocess.call(sys.argv[index])
-            except FileNotFoundError:
-                print('不能执行%s命令' % sys.argv[index])
-    else:
-        print('请使用命令行参数指定要执行的进程')
+     # Get command line arguments through sys.argv
+     if len(sys.argv) > 1:
+         # The first command-line argument is the program itself, so start with the second
+         for index in range(1, len(sys.argv)):
+             try:
+                 # Start the subprocess through the call function of the subprocess module
+                 status = subprocess.call(sys.argv[index])
+             except FileNotFoundError:
+                 print('Cannot execute %s command' % sys.argv[index])
+     else:
+         print('Please use command line parameters to specify the process to execute')
 
 
 if __name__ == '__main__':
-    main()
+     main()

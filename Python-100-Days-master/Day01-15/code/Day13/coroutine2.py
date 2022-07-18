@@ -1,8 +1,8 @@
 """
-使用协程 - 查看协程的状态
+Working with coroutines - view the state of a coroutine
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-21
 """
 
@@ -14,18 +14,18 @@ def build_deliver_man(man_id):
     total = 0
     while True:
         total += 1
-        print('%d号快递员准备接今天的第%d单.' % (man_id, total))
+        print('The courier number %d is ready to take today's order %d.' % (man_id, total))
         pkg = yield
-        print('%d号快递员收到编号为%s的包裹.' % (man_id, pkg))
+        print('The courier number %d received the package number %s.' % (man_id, pkg))
         sleep(0.5)
 
 
 def package_center(deliver_man, max_per_day):
     num = 1
-    # 创建状态(GEN_CREATED) - 等待开始执行
+    # Create state (GEN_CREATED) - waiting to start execution
     print(getgeneratorstate(deliver_man))
     deliver_man.send(None)
-    # 挂起状态(GEN_SUSPENDED) - 在yield表达式处暂停
+    # Suspended state (GEN_SUSPENDED) - Suspended at yield expression
     print(getgeneratorstate(deliver_man))
     # next(deliver_man)
     while num <= max_per_day:
@@ -33,9 +33,9 @@ def package_center(deliver_man, max_per_day):
         deliver_man.send(package_id)
         num += 1
     deliver_man.close()
-    # 结束状态(GEN_CLOSED) - 执行完毕
+    # end state (GEN_CLOSED) - execution completed
     print(getgeneratorstate(deliver_man))
-    print('今天的包裹派送完毕!')
+    print('Today's parcel delivery is complete!')
 
 
 dm = build_deliver_man(1)

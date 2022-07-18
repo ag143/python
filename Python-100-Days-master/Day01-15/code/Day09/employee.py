@@ -1,13 +1,13 @@
 """
-抽象类 / 方法重写 / 多态
-实现一个工资结算系统 公司有三种类型的员工
-- 部门经理固定月薪12000元/月
-- 程序员按本月工作小时数每小时100元
-- 销售员1500元/月的底薪加上本月销售额5%的提成
-输入员工的信息 输出每位员工的月薪信息
+abstract class / method overriding / polymorphism
+Implementing a payroll system The company has three types of employees
+- The fixed monthly salary of the department manager is 12,000 yuan/month
+- Programmers are paid 100 yuan per hour based on the number of hours worked in this month
+- Salesperson's basic salary of 1,500 yuan/month plus a 5% commission on this month's sales
+Enter employee information Output monthly salary information for each employee
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-12
 """
 
@@ -30,9 +30,9 @@ class Employee(object, metaclass=ABCMeta):
 
 class Manager(Employee):
 
-    # 想一想: 如果不定义构造方法会怎么样
+    # Think about it: what happens if you don't define a constructor
     def __init__(self, name):
-        # 想一想: 如果不调用父类构造器会怎么样
+        # Think about it: what happens if you don't call the superclass constructor
         super().__init__(name)
 
     def get_salary(self):
@@ -64,12 +64,12 @@ class Salesman(Employee):
 
 
 if __name__ == '__main__':
-    emps = [Manager('武则天'), Programmer('狄仁杰'), Salesman('白元芳')]
+    emps = [Manager('Wu Zetian'), Programmer('Di Renjie'), Salesman('Bai Yuanfang')]
     for emp in emps:
         if isinstance(emp, Programmer):
-            working_hour = int(input('请输入%s本月工作时间: ' % emp.name))
+            working_hour = int(input('Please enter %s working time this month: ' % emp.name))
             emp.set_working_hour(working_hour)
         elif isinstance(emp, Salesman):
-            sales = float(input('请输入%s本月销售额: ' % emp.name))
+            sales = float(input('Please enter %s sales this month: ' % emp.name))
             emp.set_sales(sales)
-        print('%s本月月薪为: ￥%.2f元' % (emp.name, emp.get_salary()))
+        print('%s monthly salary is: ￥%.2f yuan' % (emp.name, emp.get_salary()))

@@ -1,10 +1,10 @@
 """
-猜数字游戏
-计算机出一个1~100之间的随机数由人来猜
-计算机根据人猜的数字分别给出提示大一点/小一点/猜对了
+number guessing game
+The computer generates a random number between 1 and 100, which is guessed by humans
+According to the numbers guessed by the computer, the computer will give a hint of bigger/smaller/guess correctly
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-02
 """
 import random
@@ -12,15 +12,15 @@ import random
 answer = random.randint(1, 100)
 counter = 0
 while True:
-    counter += 1
-    number = int(input('请输入: '))
-    if number < answer:
-        print('大一点')
-    elif number > answer:
-        print('小一点')
-    else:
-        print('恭喜你猜对了!')
-        break
-print('你总共猜了%d次' % counter)
+     counter += 1
+     number = int(input('Please input: '))
+     if number < answer:
+         print('bigger')
+     elif number > answer:
+         print('smaller')
+     else:
+         print('Congratulations on your guess!')
+         break
+print('You guessed %d times in total' % counter)
 if counter > 7:
-    print('你的智商余额明显不足')
+     print('Your IQ balance is obviously insufficient')

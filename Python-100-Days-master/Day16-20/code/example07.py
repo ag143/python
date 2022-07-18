@@ -1,20 +1,20 @@
 """
-哈希摘要 - 数字签名/指纹 - 单向哈希函数（没有反函数不可逆）
-应用领域：
-1. 数据库中的用户敏感信息保存成哈希摘要
-2. 给数据生成签名验证数据没有被恶意篡改
-3. 云存储服务的秒传功能（去重功能）
+Hash digest - digital signature/fingerprint - one-way hash function (irreversible without inverse)
+Application areas:
+1. The user sensitive information in the database is saved as a hash digest
+2. Generate a signature for the data to verify that the data has not been maliciously tampered with
+3. The second transfer function of cloud storage service (duplication function)
 """
 
 
 class StreamHasher():
-    """摘要生成器"""
+    """Summary Generator"""
 
     def __init__(self, algorithm='md5', size=4096):
-        """初始化方法
+        """Initialization method
         @params:
-            algorithm - 哈希摘要算法
-            size - 每次读取数据的大小
+            algorithm - Hash digest algorithm - TeX - LaTeX Stack Exchange
+            size - the size of each read data
         """
         self.size = size
         cls = getattr(__import__('hashlib'), algorithm.lower())
@@ -22,11 +22,11 @@ class StreamHasher():
     
 
     def digest(self, file_stream):
-        """生成十六进制的摘要字符串"""
+        """Generate hexadecimal digest string"""
         # data = file_stream.read(self.size)
         # while data:
-        #     self.hasher.update(data)
-        #     data = file_stream.read(self.size)
+        # self.hasher.update(data)
+        # data = file_stream.read(self.size)
         for data in iter(lambda: file_stream.read(self.size), b''):
             self.hasher.update(data)
         return self.hasher.hexdigest()
@@ -36,7 +36,7 @@ class StreamHasher():
 
 
 def main():
-    """主函数"""
+    """Main function"""
     hasher1 = StreamHasher()
     hasher2 = StreamHasher('sha1')
     hasher3 = StreamHasher('sha256')

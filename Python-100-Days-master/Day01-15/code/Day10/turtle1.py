@@ -1,10 +1,10 @@
 """
 
-用turtle模块绘图
-这是一个非常有趣的模块 它模拟一只乌龟在窗口上爬行的方式来进行绘图
+Drawing with turtle module
+This is a very interesting module that simulates a turtle crawling on a window to draw
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-14
 
 """
@@ -18,8 +18,8 @@ turtle.pencolor('red')
 turtle.fillcolor('yellow')
 turtle.pendown()
 turtle.begin_fill()
-for _ in range(36):
-    turtle.forward(200)
-    turtle.right(170)
+for_in range(36):
+     turtle.forward(200)
+     turtle.right(170)
 turtle.end_fill()
 turtle.mainloop()

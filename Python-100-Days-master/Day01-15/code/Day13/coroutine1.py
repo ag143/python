@@ -1,8 +1,8 @@
 """
-使用协程 - 模拟快递中心派发快递
+Using coroutines - simulate express delivery center
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-21
 """
 
@@ -11,30 +11,30 @@ from random import random
 
 
 def build_deliver_man(man_id):
-    total = 0
-    while True:
-        total += 1
-        print('%d号快递员准备接今天的第%d单.' % (man_id, total))
-        pkg = yield
-        print('%d号快递员收到编号为%s的包裹.' % (man_id, pkg))
-        sleep(random() * 3)
+     total = 0
+     while True:
+         total += 1
+         print('The courier number %d is ready to take today's order %d.' % (man_id, total))
+         pkg = yield
+         print('The courier number %d received the package number %s.' % (man_id, pkg))
+         sleep(random() * 3)
 
 
 def package_center(deliver_man, max_per_day):
-    num = 1
-    deliver_man.send(None)
-    # next(deliver_man)
-    while num <= max_per_day:
-        package_id = 'PKG-%d' % num
-        deliver_man.send(package_id)
-        num += 1
-        sleep(0.1)
-    deliver_man.close()
-    print('今天的包裹派送完毕!')
+     num = 1
+     deliver_man.send(None)
+     # next(deliver_man)
+     while num <= max_per_day:
+         package_id = 'PKG-%d' % num
+         deliver_man.send(package_id)
+         num += 1
+         sleep(0.1)
+     deliver_man.close()
+     print('Today's parcel delivery is complete!')
 
 
 dm = build_deliver_man(1)
 package_center(dm, 10)
 
-# 两个函数虽然没有调用关系但是创建快递员的函数作为一个协程协助了快递中心函数完成任务
-# 想一想如果有多个快递员的时候应该如何处理
+# Although the two functions have no calling relationship, the function that creates the courier serves as a coroutine to assist the courier center function to complete the task
+# Think about what to do if there are multiple couriers

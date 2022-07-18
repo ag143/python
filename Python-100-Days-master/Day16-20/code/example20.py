@@ -1,27 +1,27 @@
 """
-线程间通信（共享数据）非常简单因为可以共享同一个进程的内存
-进程间通信（共享数据）比较麻烦因为操作系统会保护分配给进程的内存
-要实现多进程间的通信通常可以用系统管道、套接字、三方服务来实现
+Inter-thread communication (shared data) is very simple because the memory of the same process can be shared
+Interprocess communication (shared data) is cumbersome because the operating system protects the memory allocated to the process
+To achieve multi-process communication, you can usually use system pipes, sockets, and three-party services to achieve
 multiprocessing.Queue
-守护线程 - daemon thread
-守护进程 - firewalld / httpd / mysqld
-在系统停机的时候不保留的进程 - 不会因为进程还没有执行结束而阻碍系统停止
+daemon thread - daemon thread
+Daemons - firewalld/httpd/mysqld
+Processes that are not preserved when the system is down - won't prevent the system from being stopped because the process has not finished executing
 """
 from threading import Thread
 from time import sleep
 
 
 def output(content):
-    while True:
-        print(content, end='')
+     while True:
+         print(content, end='')
 
 
 def main():
-    Thread(target=output, args=('Ping', ), daemon=True).start()
-    Thread(target=output, args=('Pong', ), daemon=True).start()
-    sleep(5)
-    print('bye!')
+     Thread(target=output, args=('Ping', ), daemon=True).start()
+     Thread(target=output, args=('Pong', ), daemon=True).start()
+     sleep(5)
+     print('bye!')
 
 
 if __name__ == '__main__':
-    main()
+     main()

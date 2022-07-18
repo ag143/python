@@ -1,8 +1,8 @@
 """
-使用多线程的情况 - 耗时间的任务在独立的线程中执行
+When using multithreading - time-consuming tasks are executed in separate threads
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-20
 """
 
@@ -17,30 +17,30 @@ def main():
     class DownloadTaskHandler(Thread):
 
         def run(self):
-            # 模拟下载任务需要花费10秒钟时间
+            # The simulated download task takes 10 seconds
             time.sleep(10)
-            tkinter.messagebox.showinfo('提示', '下载完成!')
-            # 启用下载按钮
+            tkinter.messagebox.showinfo('Prompt', 'Download complete!')
+            # enable download button
             button1.config(state=tkinter.NORMAL)
 
     def download():
-        # 禁用下载按钮
+        # disable download button
         button1.config(state=tkinter.DISABLED)
-        # 通过daemon参数将线程设置为守护线程(主程序退出就不再保留执行)
+        # Set the thread as a daemon thread through the daemon parameter (the main program will no longer retain execution when it exits)
         DownloadTaskHandler(daemon=True).start()
 
     def show_about():
-        tkinter.messagebox.showinfo('关于', '作者: 骆昊(v1.0)')
+        tkinter.messagebox.showinfo('About', 'Author: author(v1.0)')
 
     top = tkinter.Tk()
-    top.title('单线程')
+    top.title('Single thread')
     top.geometry('200x150')
     top.wm_attributes('-topmost', 1)
 
     panel = tkinter.Frame(top)
-    button1 = tkinter.Button(panel, text='下载', command=download)
+    button1 = tkinter.Button(panel, text='download', command=download)
     button1.pack(side='left')
-    button2 = tkinter.Button(panel, text='关于', command=show_about)
+    button2 = tkinter.Button(panel, text='about', command=show_about)
     button2.pack(side='right')
     panel.pack(side='bottom')
 

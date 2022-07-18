@@ -1,10 +1,10 @@
 """
-使用tkinter创建GUI
-- 使用画布绘图
-- 处理鼠标事件
+Creating GUIs with tkinter
+- Use canvas to draw
+- handle mouse events
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-14
 """
 
@@ -20,13 +20,13 @@ def mouse_evt_handler(evt=None):
 
 
 top = tkinter.Tk()
-# 设置窗口尺寸
+# set window size
 top.geometry('620x620')
-# 设置窗口标题
-top.title('五子棋')
-# 设置窗口大小不可改变
+# set the window title
+top.title('Gobang')
+# Set the window size to be immutable
 top.resizable(False, False)
-# 设置窗口置顶
+# Set the window to the top
 top.wm_attributes('-topmost', 1)
 canvas = tkinter.Canvas(top, width=600, height=600, bd=0, highlightthickness=0)
 canvas.bind('<Button-1>', mouse_evt_handler)
@@ -38,4 +38,4 @@ canvas.create_rectangle(15, 15, 585, 585, outline='black', width=4)
 canvas.pack()
 tkinter.mainloop()
 
-# 请思考如何用面向对象的编程思想对上面的代码进行封装
+# Please think about how to encapsulate the above code with object-oriented programming ideas

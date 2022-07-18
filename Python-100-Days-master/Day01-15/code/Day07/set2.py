@@ -1,13 +1,13 @@
 """
-集合的常用操作
-- 交集
-- 并集
-- 差集
-- 子集
-- 超集
+Common operations on collections
+- intersection
+- Union
+- Difference
+- Subset
+- superset
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-06
 """
 

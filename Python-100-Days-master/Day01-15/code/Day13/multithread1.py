@@ -1,8 +1,8 @@
 """
-使用多线程的情况 - 模拟多个下载任务
+Using Multithreading - Simulate Multiple Download Tasks
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-20
 """
 
@@ -13,30 +13,30 @@ import _thread
 
 
 def download_task(filename):
-    print('开始下载%s...' % filename)
+    print('Start downloading %s...' % filename)
     time_to_download = randint(5, 10)
-    print('剩余时间%d秒.' % time_to_download)
+    print('Remaining time %d seconds.' % time_to_download)
     sleep(time_to_download)
-    print('%s下载完成!' % filename)
+    print('%s download complete!' % filename)
 
 
 def shutdown_hook(start):
     end = time()
-    print('总共耗费了%.3f秒.' % (end - start))
+    print('It took %.3f seconds in total.' % (end - start))
 
 
 def main():
     start = time()
-    # 将多个下载任务放到多个线程中执行
-    thread1 = _thread.start_new_thread(download_task, ('Python从入门到住院.pdf',))
+    # Put multiple download tasks into multiple threads for execution
+    thread1 = _thread.start_new_thread(download_task, ('Python from entry to hospital.pdf',))
     thread2 = _thread.start_new_thread(download_task, ('Peking Hot.avi',))
-    # 注册关机钩子在程序执行结束前计算执行时间
+    # Register the shutdown hook to calculate the execution time before the program execution ends
     atexit.register(shutdown_hook, start)
 
 
 if __name__ == '__main__':
     main()
 
-# 执行这里的代码会引发致命错误(不要被这个词吓到) 因为主线程结束后下载线程再想执行就会出问题
-# 需要说明一下 由于_thread模块属于比较底层的线程操作而且不支持守护线程的概念
-# 在实际开发中会有诸多不便 因此我们推荐使用threading模块提供的高级操作进行多线程编程
+# Executing the code here will cause a fatal error (don't be scared by the word) because the download thread will have problems if it tries to execute it after the main thread ends
+# Need to explain because the _thread module is a relatively low-level thread operation and does not support the concept of daemon threads
+# There will be a lot of inconvenience in actual development, so we recommend using the advanced operations provided by the threading module for multi-threaded programming

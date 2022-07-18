@@ -1,85 +1,85 @@
 """
-读取JSON数据
+Read JSON data
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-13
 """
 
 import json
 import csv2
 
-json_str = '{"name": "骆昊", "age": 38, "title": "叫兽"}'
+json_str = '{"name": "author", "age": 38, "title": "called beast"}'
 result = json.loads(json_str)
 print(result)
 print(type(result))
 print(result['name'])
 print(result['age'])
 
-# 把转换得到的字典作为关键字参数传入Teacher的构造器
+# Pass the converted dictionary as a keyword argument to the Teacher's constructor
 teacher = csv2.Teacher(**result)
 print(teacher)
 print(teacher.name)
 print(teacher.age)
 print(teacher.title)
 
-# 请思考如何将下面JSON格式的天气数据转换成对象并获取我们需要的信息
-# 稍后我们会讲解如何通过网络API获取我们需要的JSON格式的数据
+# Please think about how to convert the weather data in JSON format below into an object and get the information we need
+# Later we will explain how to get the JSON format data we need through the network API
 """
     {
         "wendu": "29",
-        "ganmao": "各项气象条件适宜，发生感冒机率较低。但请避免长期处于空调房间中，以防感冒。",
+        "ganmao": "The weather conditions are suitable, and the chance of getting a cold is low. But please avoid staying in an air-conditioned room for a long time to prevent a cold.",
         "forecast": [
             {
-                "fengxiang": "南风",
-                "fengli": "3-4级",
-                "high": "高温 32℃",
-                "type": "多云",
-                "low": "低温 17℃",
-                "date": "16日星期二"
+                "fengxiang": "Southern Wind",
+                "fengli": "Level 3-4",
+                "high": "High temperature 32℃",
+                "type": "Cloudy",
+                "low": "Low temperature 17℃",
+                "date": "Tuesday the 16th"
             },
             {
-                "fengxiang": "南风",
-                "fengli": "微风级",
-                "high": "高温 34℃",
-                "type": "晴",
-                "low": "低温 19℃",
-                "date": "17日星期三"
+                "fengxiang": "Southern Wind",
+                "fengli": "Breeze level",
+                "high": "High temperature 34℃",
+                "type": "Sunny",
+                "low": "Low temperature 19℃",
+                "date": "Wednesday the 17th"
             },
             {
-                "fengxiang": "南风",
-                "fengli": "微风级",
-                "high": "高温 35℃",
-                "type": "晴",
-                "low": "低温 22℃",
-                "date": "18日星期四"
+                "fengxiang": "Southern Wind",
+                "fengli": "Breeze level",
+                "high": "High temperature 35℃",
+                "type": "Sunny",
+                "low": "Low temperature 22℃",
+                "date": "Thursday the 18th"
             },
             {
-                "fengxiang": "南风",
-                "fengli": "微风级",
-                "high": "高温 35℃",
-                "type": "多云",
-                "low": "低温 22℃",
-                "date": "19日星期五"
+                "fengxiang": "Southern Wind",
+                "fengli": "Breeze level",
+                "high": "High temperature 35℃",
+                "type": "Cloudy",
+                "low": "Low temperature 22℃",
+                "date": "Friday the 19th"
             },
             {
-                "fengxiang": "南风",
-                "fengli": "3-4级",
-                "high": "高温 34℃",
-                "type": "晴",
-                "low": "低温 21℃",
-                "date": "20日星期六"
+                "fengxiang": "Southern Wind",
+                "fengli": "Level 3-4",
+                "high": "High temperature 34℃",
+                "type": "Sunny",
+                "low": "Low temperature 21℃",
+                "date": "Saturday the 20th"
             }
         ],
         "yesterday": {
-            "fl": "微风",
-            "fx": "南风",
-            "high": "高温 28℃",
-            "type": "晴",
-            "low": "低温 15℃",
-            "date": "15日星期一"
+            "fl": "Breeze",
+            "fx": "South Wind",
+            "high": "High temperature 28℃",
+            "type": "Sunny",
+            "low": "Low temperature 15℃",
+            "date": "Monday the 15th"
         },
         "aqi": "72",
-        "city": "北京"
+        "city": "Beijing"
     }
 """

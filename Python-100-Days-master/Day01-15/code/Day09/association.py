@@ -2,7 +2,7 @@
 对象之间的关联关系
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-12
 """
 

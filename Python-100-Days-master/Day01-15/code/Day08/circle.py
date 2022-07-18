@@ -1,11 +1,11 @@
 """
-练习
-修一个游泳池 半径(以米为单位)在程序运行时输入 游泳池外修一条3米宽的过道
-过道的外侧修一圈围墙 已知过道的造价为25元每平米 围墙的造价为32.5元每米
-输出围墙和过道的总造价分别是多少钱(精确到小数点后2位)
+practise
+Build a swimming pool Radius (in meters) is entered when the program is running Build a 3m wide aisle outside the swimming pool
+Build a wall on the outside of the aisle. The cost of the aisle is known to be 25 yuan per square meter, and the cost of the wall is 32.5 yuan per meter.
+How much is the total cost of the output wall and aisle (accurate to 2 decimal places)
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-08
 """
 
@@ -34,9 +34,9 @@ class Circle(object):
         return math.pi * self._radius * self._radius
 
 
-if __name__ == '__main__':  
-    radius = float(input('请输入游泳池的半径: '))
+if __name__ == '__main__':
+    radius = float(input('Please enter the radius of the pool: '))
     small = Circle(radius)
     big = Circle(radius + 3)
-    print('围墙的造价为: ￥%.1f元' % (big.perimeter * 115))
-    print('过道的造价为: ￥%.1f元' % ((big.area - small.area) * 65))
+    print('The cost of the wall is: ￥%.1f yuan' % (big.perimeter * 115))
+    print('The cost of the aisle is: ￥%.1f yuan' % ((big.area - small.area) * 65))

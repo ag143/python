@@ -1,19 +1,19 @@
 """
-查找 - 顺序查找和二分查找
-算法：解决问题的方法（步骤）
-评价一个算法的好坏主要有两个指标：渐近时间复杂度和渐近空间复杂度，通常一个算法很难做到时间复杂度和空间复杂度都很低（因为时间和空间是不可调和的矛盾）
-表示渐近时间复杂度通常使用大O标记
-O(c)：常量时间复杂度 - 哈希存储 / 布隆过滤器
-O(log_2 n)：对数时间复杂度 - 折半查找
-O(n)：线性时间复杂度 - 顺序查找
-O(n * log_2 n)：- 对数线性时间复杂度 - 高级排序算法（归并排序、快速排序）
-O(n ** 2)：平方时间复杂度 - 简单排序算法（冒泡排序、选择排序、插入排序）
-O(n ** 3)：立方时间复杂度 - Floyd算法 / 矩阵乘法运算
-也称为多项式时间复杂度
-O(2 ** n)：几何级数时间复杂度 - 汉诺塔
-O(3 ** n)：几何级数时间复杂度
-也称为指数时间复杂度
-O(n!)：阶乘时间复杂度 - 旅行经销商问题 - NP
+Search - Sequential Search and Binary Search
+Algorithms: Methods of Solving Problems (Steps)
+There are two main indicators for evaluating the quality of an algorithm: asymptotic time complexity and asymptotic space complexity. Usually, it is difficult for an algorithm to achieve low time complexity and space complexity (because time and space are irreconcilable). contradiction)
+Representing asymptotic time complexity is usually done using Big O notation
+O(c): Constant Time Complexity - Hash Storage / Bloom Filter
+O(log_2 n): Logarithmic Time Complexity - Find in Half
+O(n): Linear Time Complexity - Sequential Search
+O(n * log_2 n): - log-linear time complexity - advanced sorting algorithms (merge sort, quick sort)
+O(n**2): Squared Time Complexity - Simple Sorting Algorithms (Bubble Sort, Selection Sort, Insertion Sort)
+O(n**3): Cubic Time Complexity - Floyd's Algorithm / Matrix Multiplication
+Also known as polynomial time complexity
+O(2**n): Geometric series time complexity - Tower of Hanoi
+O(3**n): geometric series time complexity
+Also known as exponential time complexity
+O(n!): Factorial Time Complexity - Traveling Dealer Problem - NP
 """
 from math import log2, factorial
 from matplotlib import pyplot
@@ -22,7 +22,7 @@ import numpy
 
 
 def seq_search(items: list, elem) -> int:
-    """顺序查找"""
+    """Search order"""
     for index, item in enumerate(items):
         if elem == item:
             return index
@@ -30,7 +30,7 @@ def seq_search(items: list, elem) -> int:
 
 
 def bin_search(items, elem):
-    """二分查找"""
+    """Binary search"""
     start, end = 0, len(items) - 1
     while start <= end:
         mid = (start + end) // 2
@@ -44,10 +44,10 @@ def bin_search(items, elem):
 
 
 def main():
-    """主函数（程序入口）"""
+    """Main function (program entry)"""
     num = 6
     styles = ['r-.', 'g-*', 'b-o', 'y-x', 'c-^', 'm-+', 'k-d']
-    legends = ['对数', '线性', '线性对数', '平方', '立方', '几何级数', '阶乘']
+    legends = ['log', 'linear', 'linear-log', 'square', 'cubic', 'geometric series', 'factorial']
     x_data = [x for x in range(1, num + 1)]
     y_data1 = [log2(y) for y in range(1, num + 1)]
     y_data2 = [y for y in range(1, num + 1)]

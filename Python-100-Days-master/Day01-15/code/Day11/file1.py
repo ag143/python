@@ -1,8 +1,8 @@
 """
-从文本文件中读取数据
+Read data from text file
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-13
 """
 
@@ -10,22 +10,22 @@ import time
 
 
 def main():
-    # 一次性读取整个文件内容
-    with open('致橡树.txt', 'r', encoding='utf-8') as f:
-        print(f.read())
+     # Read the entire file content at once
+     with open('tooak.txt', 'r', encoding='utf-8') as f:
+         print(f.read())
 
-    # 通过for-in循环逐行读取
-    with open('致橡树.txt', mode='r') as f:
-        for line in f:
-            print(line, end='')
-            time.sleep(0.5)
-    print()
+     # Read line by line through a for-in loop
+     with open('To Oak.txt', mode='r') as f:
+         for line in f:
+             print(line, end='')
+             time.sleep(0.5)
+     print()
 
-    # 读取文件按行读取到列表中
-    with open('致橡树.txt') as f:
-        lines = f.readlines()
-    print(lines)
+     # Read the file into a list line by line
+     with open('to oak.txt') as f:
+         lines = f.readlines()
+     print(lines)
     
 
 if __name__ == '__main__':
-    main()
+     main()

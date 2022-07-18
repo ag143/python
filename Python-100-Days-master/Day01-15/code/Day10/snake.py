@@ -7,7 +7,7 @@ import pygame
 
 
 class Color(object):
-    """颜色"""
+    """color"""
 
     GRAY = (242, 242, 242)
     BLACK = (0, 0, 0)
@@ -17,7 +17,7 @@ class Color(object):
 
 @unique
 class Direction(Enum):
-    """方向"""
+    """direction"""
 
     UP = 0
     RIGHT = 1
@@ -26,15 +26,15 @@ class Direction(Enum):
 
 
 class GameObject(object, metaclass=ABCMeta):
-    """游戏中的对象"""
+    """Objects in the game"""
 
     def __init__(self, x=0, y=0, color=Color.BLACK):
         """
-        初始化方法
+        initialization method
 
-        :param x: 横坐标
-        :param y: 纵坐标
-        :param color: 颜色
+        :param x: abscissa
+        :param y: ordinate
+        :param color: color
         """
         self._x = x
         self._y = y
@@ -51,25 +51,25 @@ class GameObject(object, metaclass=ABCMeta):
     @abstractmethod
     def draw(self, screen):
         """
-        绘制
+        draw
 
-        :param screen: 屏幕
+        :param screen: screen
         """
         pass
 
 
 class Wall(GameObject):
-    """围墙"""
+    """Wall"""
 
     def __init__(self, x, y, width, height, color=Color.BLACK):
         """
-        初始化方法
+        initialization method
 
-        :param x: 横坐标
-        :param y: 纵坐标
-        :param width: 宽度
-        :param height: 高度
-        :param color: 颜色
+        :param x: abscissa
+        :param y: ordinate
+        :param width: width
+        :param height: height
+        :param color: color
         """
         super().__init__(x, y, color)
         self._width = width
@@ -89,16 +89,16 @@ class Wall(GameObject):
 
 
 class Food(GameObject):
-    """食物"""
+    """food"""
 
     def __init__(self, x, y, size, color=Color.PINK):
         """
-        初始化方法
+        initialization method
 
-        :param x: 横坐标
-        :param y: 纵坐标
-        :param size: 大小
-        :param color: 颜色
+        :param x: abscissa
+        :param y: ordinate
+        :param size: size
+        :param color: color
         """
         super().__init__(x, y, color)
         self._size = size
@@ -113,16 +113,16 @@ class Food(GameObject):
 
 
 class SnakeNode(GameObject):
-    """蛇身上的节点"""
+    """Node on the snake"""
 
     def __init__(self, x, y, size, color=Color.GREEN):
         """
-        初始化方法
+        initialization method
 
-        :param x: 横坐标
-        :param y: 纵坐标
-        :param size: 大小
-        :param color: 颜色
+        :param x: abscissa
+        :param y: ordinate
+        :param size: size
+        :param color: color
         """
         super().__init__(x, y, color)
         self._size = size
@@ -139,16 +139,16 @@ class SnakeNode(GameObject):
 
 
 class Snake(GameObject):
-    """蛇"""
+    """snake"""
 
     def __init__(self, x, y, size=20, length=5):
         """
-        初始化方法
+        initialization method
 
-        :param x: 横坐标
-        :param y: 纵坐标
-        :param size: 大小
-        :param length: 初始长度
+        :param x: abscissa
+        :param y: ordinate
+        :param size: size
+        :param length: initial length
         """
         super().__init__()
         self._dir = Direction.LEFT
@@ -173,16 +173,16 @@ class Snake(GameObject):
 
     def change_dir(self, new_dir):
         """
-        改变方向
+        change direction
 
-        :param new_dir: 新方向
+        :param new_dir: new direction
         """
         if new_dir != self._dir and \
                 (self._dir.value + new_dir.value) % 2 != 0:
             self._new_dir = new_dir
 
     def move(self):
-        """移动"""
+        """move"""
         if self._new_dir:
             self._dir, self._new_dir = self._new_dir, None
         snake_dir = self._dir
@@ -201,9 +201,9 @@ class Snake(GameObject):
 
     def collide(self, wall):
         """
-        撞墙
+        hit the wall
 
-        :param wall: 围墙
+        :param wall: wall
         """
         head = self.head
         if head.x < wall.x or head.x + head.size > wall.x + wall.width \
@@ -212,11 +212,11 @@ class Snake(GameObject):
 
     def eat_food(self, food):
         """
-        吃食物
+        Eat food
 
-        :param food: 食物
+        :param food: food
 
-        :return: 吃到食物返回True否则返回False
+        :return: Return True if food is eaten else return False
         """
         if self.head.x == food.x and self.head.y == food.y:
             tail = self._nodes[-1]
@@ -225,10 +225,11 @@ class Snake(GameObject):
         return False
 
     def eat_self(self):
-        """咬自己"""
+        """Bite yourself"""
         for index in range(4, len(self._nodes)):
             node = self._nodes[index]
-            if node.x == self.head.x and node.y == self.head.y:
+            if node.x
+            == self.head.x and node.y == self.head.y:
                 self._alive = False
 
     def draw(self, screen):

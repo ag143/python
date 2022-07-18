@@ -1,8 +1,8 @@
 """
-对象之间的依赖关系和运算符重载
+Dependencies between objects and operator overloading
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-12
 """
 
@@ -27,7 +27,7 @@ class Car(object):
         self._current_speed = 0
 
     def __str__(self):
-        return '%s当前时速%d' % (self._brand, self._current_speed)
+        return '%s current speed%d' % (self._brand, self._current_speed)
 
 
 class Student(object):
@@ -40,9 +40,9 @@ class Student(object):
     def name(self):
         return self._name
 
-    # 学生和车之间存在依赖关系 - 学生使用了汽车
+    # There is a dependency between the student and the car - the student uses the car
     def drive(self, car):
-        print('%s驾驶着%s欢快的行驶在去西天的路上' % (self._name, car._brand))
+        print('%s drove %s happily on the road to the West' % (self._name, car._brand))
         car.accelerate(30)
         print(car)
         car.accelerate(50)
@@ -51,29 +51,29 @@ class Student(object):
         print(car)
 
     def study(self, course_name):
-        print('%s正在学习%s.' % (self._name, course_name))
+        print('%s is studying %s.' % (self._name, course_name))
 
     def watch_av(self):
         if self._age < 18:
-            print('%s只能观看《熊出没》.' % self._name)
+            print('%s can only watch "Bears".' % self._name)
         else:
-            print('%s正在观看岛国爱情动作片.' % self._name)
+            print('%s is watching an island love action movie.' % self._name)
 
-    # 重载大于(>)运算符
+    # Overload the greater than (>) operator
     def __gt__(self, other):
         return self._age > other._age
 
-    # 重载小于(<)运算符
+    # Overload the less than (<) operator
     def __lt__(self, other):
         return self._age < other._age
 
 
 if __name__ == '__main__':
-    stu1 = Student('骆昊', 38)
-    stu1.study('Python程序设计')
+    stu1 = Student('author', 38)
+    stu1.study('Python programming')
     stu1.watch_av()
-    stu2 = Student('王大锤', 15)
-    stu2.study('思想品德')
+    stu2 = Student('The King's Hammer', 15)
+    stu2.study('ideological and moral')
     stu2.watch_av()
     car = Car('QQ', 120)
     stu2.drive(car)

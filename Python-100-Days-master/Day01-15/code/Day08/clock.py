@@ -1,8 +1,8 @@
 """
-定义和使用时钟类
+Defining and Using Clock Classes
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-08
 """
 
@@ -12,9 +12,9 @@ import os
 
 class Clock(object):
 
-    # Python中的函数是没有重载的概念的
-    # 因为Python中函数的参数没有类型而且支持缺省参数和可变参数
-    # 用关键字参数让构造器可以传入任意多个参数来实现其他语言中的构造器重载
+    # Functions in Python have no concept of overloading
+    # Because the parameters of functions in Python have no type and support default parameters and variadic parameters
+    # Use keyword arguments to allow the constructor to pass in any number of parameters to implement constructor overloading in other languages
     def __init__(self, **kw):
         if 'hour' in kw and 'minute' in kw and 'second' in kw:
             self._hour = kw['hour']

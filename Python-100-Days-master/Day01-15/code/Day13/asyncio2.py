@@ -1,24 +1,24 @@
 """
-异步I/O操作 - async和await
+Asynchronous I/O operations - async and await
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-21
 """
 import asyncio
 import threading
 
 
-# 通过async修饰的函数不再是普通函数而是一个协程
-# 注意async和await将在Python 3.7中作为关键字出现
+# The function modified by async is no longer a normal function but a coroutine
+# Note that async and await will appear as keywords in Python 3.7
 async def hello():
-    print('%s: hello, world!' % threading.current_thread())
-    await asyncio.sleep(2)
-    print('%s: goodbye, world!' % threading.current_thread())
+     print('%s: hello, world!' % threading.current_thread())
+     await asyncio.sleep(2)
+     print('%s: goodbye, world!' % threading.current_thread())
 
 
 loop = asyncio.get_event_loop()
 tasks = [hello(), hello()]
-# 等待两个异步I/O操作执行结束
+# Wait for two asynchronous I/O operations to complete
 loop.run_until_complete(asyncio.wait(tasks))
 loop.close()

@@ -1,7 +1,7 @@
 """
-面向对象
-枚举 - 一个变量的值只有有限个选择，最适合的类型就是枚举
-通过枚举我们可以定义符号常量，符号常量优于字面常量
+object oriented
+Enumerations - There are only a limited number of options for the value of a variable, the most suitable type is an enumeration
+By enumeration we can define symbolic constants, which are better than literal constants
 """
 from enum import Enum, unique
 
@@ -10,7 +10,7 @@ import random
 
 @unique
 class Suite(Enum):
-    """花色（枚举）"""
+    """Suit (enumeration)"""
     SPADE, HEART, CLUB, DIAMOND = range(4)
 
     def __lt__(self, other):
@@ -18,7 +18,7 @@ class Suite(Enum):
 
 
 class Card():
-    """牌"""
+    """Card"""
     
     def __init__(self, suite, face):
         self.suite = suite
@@ -29,13 +29,13 @@ class Card():
 
     def __str__(self):
         suites = ('♠️', '♥️', '♣️', '♦️')
-        faces = ('', 'A', '2', '3', '4', '5', '6', 
+        faces = ('', 'A', '2', '3', '4', '5', '6',
                  '7', '8', '9', '10', 'J', 'Q', 'K')
         return f'{suites[self.suite.value]} {faces[self.face]}'
 
 
 class Poker():
-    """扑克"""
+    """poker"""
     
     def __init__(self):
         self.index = 0
@@ -44,45 +44,45 @@ class Poker():
                       for face in range(1, 14)]
 
     def shuffle(self):
-        """洗牌"""
+        """Shuffle"""
         self.index = 0
         random.shuffle(self.cards)
 
     def deal(self):
-        """发牌"""
+        """Licensing"""
         card = self.cards[self.index]
         self.index += 1
         return card
 
     @property
     def has_more(self):
-        """是否有更多的牌"""
+        """Are there more cards"""
         return self.index < len(self.cards)
 
 
 class Player():
-    """玩家"""
+    """Player"""
 
     def __init__(self, name):
         self.name = name
         self.cards = []
 
     def get_card(self, card):
-        """摸牌"""
+        """Draw a card"""
         self.cards.append(card)
 
     def arrange(self):
-        """整理手上的牌"""
+        """Organize the cards in hand"""
         self.cards.sort(key=lambda card: (card.suite, card.face))
 
 
 def main():
-    """主函数"""
+    """Main function"""
     poker = Poker()
     poker.shuffle()
     players = [
-        Player('东邪'), Player('西毒'), 
-        Player('南帝'), Player('北丐')
+        Player('East evil'), Player('West poison'),
+        Player('Southern Emperor'), Player('Northern Beggar')
     ]
     while poker.has_more:
         for player in players:

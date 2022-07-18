@@ -2,26 +2,26 @@ import re
 
 
 def main():
-    # 创建正则表达式对象 使用了前瞻和回顾来保证手机号前后不应该出现数字
-    pattern = re.compile(r'(?<=\D)(1[38]\d{9}|14[57]\d{8}|15[0-35-9]\d{8}|17[678]\d{8})(?=\D)')
-    sentence = '''
-    重要的事情说8130123456789遍，我的手机号是13512346789这个靓号，
-    不是15600998765，也是110或119，王大锤的手机号才是15600998765。
-    '''
-    # 查找所有匹配并保存到一个列表中
-    mylist = re.findall(pattern, sentence)
-    print(mylist)
-    print('--------华丽的分隔线--------')
-    # 通过迭代器取出匹配对象并获得匹配的内容
-    for temp in pattern.finditer(sentence):
-        print(temp.group())
-    print('--------华丽的分隔线--------')
-    # 通过search函数指定搜索位置找出所有匹配
-    m = pattern.search(sentence)
-    while m:
-        print(m.group())
-        m = pattern.search(sentence, m.end())
+     # Create a regular expression object Use look-ahead and look-back to ensure that numbers should not appear before and after the phone number
+     pattern = re.compile(r'(?<=\D)(1[38]\d{9}|14[57]\d{8}|15[0-35-9]\d{8}| 17[678]\d{8})(?=\D)')
+     sentence = '''
+     Important things have been said 8130123456789 times, my mobile phone number is 13512346789, this pretty number,
+     It's not 15600998765, it's also 110 or 119. Wang Dazhui's mobile phone number is 15600998765.
+     '''
+     # Find all matches and save to a list
+     mylist = re.findall(pattern, sentence)
+     print(mylist)
+     print('-------Ornate divider-------')
+     # Take out the matching object through the iterator and get the matching content
+     for temp in pattern.finditer(sentence):
+         print(temp.group())
+     print('-------Ornate divider-------')
+     # Find all matches by specifying the search location with the search function
+     m = pattern.search(sentence)
+     while m:
+         print(m.group())
+         m = pattern.search(sentence, m.end())
 
 
 if __name__ == '__main__':
-    main()
+     main()

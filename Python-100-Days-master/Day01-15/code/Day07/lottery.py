@@ -1,8 +1,8 @@
 """
-双色球随机选号程序
+Two-color ball random number selection program
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-06
 """
 
@@ -11,7 +11,7 @@ from random import randrange, randint, sample
 
 def display(balls):
     """
-    输出列表中的双色球号码
+    Output the two-color ball numbers in the list
     """
     for index, ball in enumerate(balls):
         if index == len(balls) - 1:
@@ -22,16 +22,16 @@ def display(balls):
 
 def random_select():
     """
-    随机选择一组号码
+    Randomly choose a set of numbers
     """
     red_balls = [x for x in range(1, 34)]
     selected_balls = []
-    for _ in range(6):
+    for_in range(6):
         index = randrange(len(red_balls))
         selected_balls.append(red_balls[index])
         del red_balls[index]
-    # 上面的for循环也可以写成下面这行代码
-    # sample函数是random模块下的函数
+    # The above for loop can also be written as the following line of code
+    # The sample function is a function under the random module
     # selected_balls = sample(red_balls, 6)
     selected_balls.sort()
     selected_balls.append(randint(1, 16))
@@ -39,7 +39,7 @@ def random_select():
 
 
 def main():
-    n = int(input('机选几注: '))
+    n = int(input('Machine selection: '))
     for _ in range(n):
         display(random_select())
 

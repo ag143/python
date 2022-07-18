@@ -1,25 +1,25 @@
 """
-输入学生考试成绩计算平均分
+Enter student test scores to calculate average score
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-06
 """
 
 
 def main():
-    number = int(input('请输入学生人数: '))
-    names = [None] * number
-    scores = [None] * number
-    for index in range(len(names)):
-        names[index] = input('请输入第%d个学生的名字: ' % (index + 1))
-        scores[index] = float(input('请输入第%d个学生的成绩: ' % (index + 1)))
-    total = 0
-    for index in range(len(names)):
-        print('%s: %.1f分' % (names[index], scores[index]))
-        total += scores[index]
-    print('平均成绩是: %.1f分' % (total / number))
+     number = int(input('Please enter the number of students: '))
+     names = [None] * number
+     scores = [None] * number
+     for index in range(len(names)):
+         names[index] = input('Please enter the name of the %dth student: ' % (index + 1))
+         scores[index] = float(input('Please enter the score of the %d student: ' % (index + 1)))
+     total = 0
+     for index in range(len(names)):
+         print('%s: %.1f score' % (names[index], scores[index]))
+         total += scores[index]
+     print('The average grade is: %.1f points' % (total / number))
 
 
 if __name__ == '__main__':
-    main()
+     main()

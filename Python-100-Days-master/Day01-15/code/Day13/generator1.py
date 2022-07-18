@@ -1,8 +1,8 @@
 """
-生成器 - 生成器语法
+Generators - Generator Syntax
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-21
 """
 

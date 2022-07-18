@@ -1,8 +1,8 @@
 """
-字符串常用操作 - 实现字符串倒转的方法
+Common operations on strings - methods to implement string inversion
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-19
 """
 
@@ -20,8 +20,8 @@ def reverse_str2(str):
 
 
 def reverse_str3(str):
-    # StringIO对象是Python中的可变字符串
-    # 不应该使用不变字符串做字符串连接操作 因为会产生很多无用字符串对象
+    # StringIO objects are mutable strings in Python
+    # You should not use immutable strings for string concatenation operations because it will generate a lot of useless string objects
     rstr = StringIO()
     str_len = len(str)
     for index in range(str_len - 1, -1, -1):
@@ -34,14 +34,14 @@ def reverse_str4(str):
 
 
 def reverse_str5(str):
-    # 将字符串处理成列表
+    # process the string into a list
     str_list = list(str)
     str_len = len(str)
-    # 使用zip函数将两个序列合并成一个产生元组的迭代器
-    # 每次正好可以取到一前一后两个下标来实现元素的交换
+    # Use the zip function to combine the two sequences into an iterator that yields a tuple
+    # Each time you can just get two subscripts before and after to achieve the exchange of elements
     for i, j in zip(range(str_len // 2), range(str_len - 1, str_len // 2, -1)):
         str_list[i], str_list[j] = str_list[j], str_list[i]
-    # 将列表元素连接成字符串
+    # Concatenate list elements into strings
     return ''.join(str_list)
 
 

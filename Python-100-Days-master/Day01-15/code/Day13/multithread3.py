@@ -1,8 +1,8 @@
 """
-使用多线程的情况 - 模拟多个下载任务
+Using Multithreading - Simulate Multiple Download Tasks
 
 Version: 0.1
-Author: 骆昊
+Author: author
 Date: 2018-03-20
 """
 
@@ -18,28 +18,28 @@ class DownloadTask(threading.Thread):
         self._filename = filename
 
     def run(self):
-        print('开始下载%s...' % self._filename)
+        print('Start downloading %s...' % self._filename)
         time_to_download = randint(5, 10)
-        print('剩余时间%d秒.' % time_to_download)
+        print('Remaining time %d seconds.' % time_to_download)
         sleep(time_to_download)
-        print('%s下载完成!' % self._filename)
+        print('%s download complete!' % self._filename)
 
 
 def main():
     start = time()
-    # 将多个下载任务放到多个线程中执行
-    # 通过自定义的线程类创建线程对象 线程启动后会回调执行run方法
-    thread1 = DownloadTask('Python从入门到住院.pdf')
+    # Put multiple download tasks into multiple threads for execution
+    # Create a thread object through a custom thread class. After the thread starts, it will call back and execute the run method
+    thread1 = DownloadTask('Python from entry to hospital.pdf')
     thread1.start()
     thread2 = DownloadTask('Peking Hot.avi')
     thread2.start()
     thread1.join()
     thread2.join()
     end = time()
-    print('总共耗费了%.3f秒' % (end - start))
+    print('It took %.3f seconds in total' % (end - start))
 
 
 if __name__ == '__main__':
     main()
 
-# 请注意通过threading.Thread创建的线程默认是非守护线程
+# Please note that threads created by threading.Thread are non-daemon threads by default

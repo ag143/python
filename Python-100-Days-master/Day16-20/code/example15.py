@@ -1,6 +1,6 @@
 """
-迭代器 - __iter__ / __next__
-itertools - 生成可迭代序列的工具模块
+Iterators - __iter__ / __next__
+itertools - Tool module for generating iterable sequences
 """
 import itertools
 
@@ -8,7 +8,7 @@ from math import sqrt
 
 
 def is_prime(num):
-    """判断素数"""
+    """Determine prime numbers"""
     for factor in range(2, int(sqrt(num)) + 1):
         if num % factor == 0:
             return False
@@ -16,7 +16,7 @@ def is_prime(num):
 
 
 class PrimeIter(object):
-    """素数迭代器"""
+    """Prime iterator"""
 
     def __init__(self, min_value, max_value):
         assert 2 <= min_value <= max_value
@@ -36,7 +36,7 @@ class PrimeIter(object):
 
 
 class FibIter(object):
-    """斐波那契数迭代器"""
+    """Fibonacci Number Iterator"""
     
     def __init__(self, num):
         self.num = num
@@ -56,16 +56,16 @@ class FibIter(object):
 
 def main():
     # for val in itertools.permutations('ABCD'):
-    #     print(val)
+    # print(val)
     # for val in itertools.combinations('ABCDE', 3):
-    #     print(val)
-    # for val in itertools.product('黑红梅方', range(1, 14)):
-    #     print(val)
+    # print(val)
+    # for val in itertools.product('Black Red Plum Square', range(1, 14)):
+    # print(val)
     # fib_iter = FibIter(20)
     # print('===>', next(fib_iter))
     # print('===>', next(fib_iter))
     # for val in fib_iter:
-    #     print(val)
+    # print(val)
     prime_iter = PrimeIter(2, 100000)
     for val in prime_iter:
         print(val)

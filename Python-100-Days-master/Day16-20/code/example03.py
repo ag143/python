@@ -1,7 +1,7 @@
 """
-函数递归调用 - 函数直接或者间接的调用了自身
-1. 收敛条件
-2. 递归公式
+Function recursive call - the function calls itself directly or indirectly
+1. Convergence Conditions
+2. Recursive formula
 
 n! = n * (n-1)!
 f(n) = f(n-1) + f(n-2)
@@ -12,7 +12,7 @@ from time import perf_counter
 
 
 def fac(num):
-    """求阶乘"""
+    """Find the factorial"""
     assert num >= 0
     if num in (0, 1):
         return 1
@@ -20,7 +20,7 @@ def fac(num):
 
 
 def fib2(num):
-    """普通函数"""
+    """Ordinary function"""
     a, b = 1, 1
     for _ in range(num - 1):
         a, b = b, a + b
@@ -28,16 +28,16 @@ def fib2(num):
 
 
 def fib3(num):
-    """生成器"""
+    """Builder"""
     a, b = 0, 1
     for _ in range(num):
         a, b = b, a + b
         yield a
 
 
-# 动态规划 - 保存可能进行重复运算的中间结果（空间换时间）
+# dynamic programming - save intermediate results that may be repeated operations (space for time)
 def fib(num, results={}):
-    """斐波拉切数"""
+    """Fibonacci number"""
     assert num > 0
     if num in (1, 2):
         return 1
@@ -55,16 +55,16 @@ def timer():
         yield
     finally:
         end = perf_counter()
-        print(f'{end - start}秒')
+        print(f'{end - start}seconds')
 
 
 def main():
-    """主函数"""
+    """Main function"""
     # for val in fib3(20):
-    #     print(val)
+    # print(val)
     # gen = fib3(20)
     # for _ in range(10):
-    #     print(next(gen))
+    # print(next(gen))
     for num in range(1, 121):
         with timer():
             print(f'{num}: {fib(num)}')

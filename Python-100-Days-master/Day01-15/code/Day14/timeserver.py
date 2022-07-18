@@ -3,29 +3,29 @@ from datetime import datetime
 
 
 def main():
-    # 1.创建套接字对象并指定使用哪种传输服务
-    # family=AF_INET - IPv4地址
-    # family=AF_INET6 - IPv6地址
-    # type=SOCK_STREAM - TCP套接字
-    # type=SOCK_DGRAM - UDP套接字
-    # type=SOCK_RAW - 原始套接字
+    # 1. Create a socket object and specify which transport service to use
+    # family=AF_INET - IPv4 address
+    # family=AF_INET6 - IPv6 address
+    # type=SOCK_STREAM - TCP socket
+    # type=SOCK_DGRAM - UDP socket
+    # type=SOCK_RAW - raw socket
     server = socket(family=AF_INET, type=SOCK_STREAM)
-    # 2.绑定IP地址和端口(区分不同的服务)
+    # 2. Bind IP address and port (distinguish different services)
     server.bind(('192.168.1.2', 6789))
-    # 3.开启监听 - 监听客户端连接到服务器
+    # 3. Enable listening - listen for client connections to the server
     server.listen(512)
-    print('服务器启动开始监听...')
-    # 4.通过循环接收客户端的连接并作出相应的处理(提供服务)
+    print('The server starts and starts listening...')
+    # 4. Receive the client's connection through the loop and make corresponding processing (provide service)
     while True:
-        # accept方法是一个阻塞方法如果没有客户端连接到服务器
-        # 这个方法就会阻塞代码不会向下执行
-        # accept方法返回元组其中的第一个元素是客户端对象
-        # 第二个元素是客户端的地址(由IP和端口两部分构成)
+        # accept method is a blocking method if no client is connected to the server
+        # This method will block the code and will not execute down
+        # The accept method returns a tuple where the first element is the client object
+        # The second element is the address of the client (consisting of IP and port)
         client, addr = server.accept()
-        print(str(addr) + '连接到了服务器.')
-        # 5.发送数据
+        print(str(addr) + 'Connected to the server.')
+        # 5. Send data
         client.send(str(datetime.now()).encode('utf-8'))
-        # 6.断开连接
+        # 6. Disconnect
         client.close()
 
 
