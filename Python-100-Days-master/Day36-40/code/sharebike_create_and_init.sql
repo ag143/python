@@ -51,4 +51,4 @@ select max(total) from (select userid, count(userid) as total from tb_record gro
 
 select nickname, cityname from (select userid, count(userid) as total from tb_record group by userid having total=(select max(total) from (select userid, count(userid) as total from tb_record group by userid) t1)) t2 inner join tb_user as t3 on t2.userid=t3.userid inner join tb_city as t4 on t3.cityid=t4.cityid;
 
-select bikeid, broken from tb_bike 
+select bikeid, broken from tb_bike

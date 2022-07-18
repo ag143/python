@@ -176,22 +176,22 @@ def main():
                           db='address', charset='utf8',
                           autocommit=True,
                           cursorclass=pymysql.cursors.DictCursor)
-    while True:
-        print('=====通讯录=====')
-        print('1. 新建联系人')
-        print('2. 查找联系人')
-        print('3. 退出系统')
-        print('===============')
-        choice = int(input('请选择: '))
-        if choice == 1:
-            add_new_contacter(con)
-        elif choice == 2:
-            find_contacters(con)
-        elif choice == 3:
-            con.close()
-            print('谢谢使用, 再见！')
-            break
+     while True:
+         print('======Address Book======')
+         print('1. New contact')
+         print('2. Find contacts')
+         print('3. Exit the system')
+         print('================')
+         choice = int(input('Please choose: '))
+         if choice == 1:
+             add_new_contacter(con)
+         elif choice == 2:
+             find_contacters(con)
+         elif choice == 3:
+             con.close()
+             print('Thanks for using, bye!')
+             break
 
 
 if __name__ == '__main__':
-    main()
+     main()

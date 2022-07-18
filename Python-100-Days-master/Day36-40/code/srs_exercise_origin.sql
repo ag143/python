@@ -1,51 +1,51 @@
--- 查询所有学生信息
+-- Query all student information
 
--- 查询所有课程名称及学分(投影和别名)
+-- Query all course names and credits (projections and aliases)
 
--- 查询所有女学生的姓名和出生日期(筛选)
+-- Query the names and dates of birth of all female students (filtering)
 
--- 查询所有80后学生的姓名、性别和出生日期(筛选)
+-- Query the name, gender and date of birth of all post-80s students (screening)
 
--- 查询姓”杨“的学生姓名和性别(模糊)
+-- Query the name and gender of the student with the last name "Yang" (fuzzy)
 
--- 查询姓”杨“名字两个字的学生姓名和性别(模糊)
+-- Query the names and genders of students with the last name "Yang" (fuzzy)
 
--- 查询姓”杨“名字三个字的学生姓名和性别(模糊)
+-- Query the names and genders of students whose last name is "Yang" (fuzzy)
 
--- 查询名字中有”不“字或“嫣”字的学生的姓名(模糊)
+-- Query the names of students with "bu" or "yan" in their names (fuzzy)
 
--- 查询没有录入家庭住址的学生姓名(空值)
+-- Query the names of students who have not entered their home addresses (null value)
 
--- 查询录入了家庭住址的学生姓名(空值)
+-- Query the name of the student whose home address is entered (null value)
 
--- 查询学生选课的所有日期(去重)
+-- Query all dates of the student's course selection (remove duplicates)
 
--- 查询学生的家庭住址(去重)
+-- Query the student's home address (de-duplication)
 
--- 查询男学生的姓名和生日按年龄从大到小排列(排序)
+-- Query the names and birthdays of male students in descending order of age (sort)
 
--- 查询年龄最大的学生的出生日期(聚合函数)
+-- Query the date of birth of the oldest student (aggregate function)
 
--- 查询年龄最小的学生的出生日期(聚合函数)
+-- Query the birth date of the youngest student (aggregate function)
 
--- 查询男女学生的人数(分组和聚合函数)
+-- Query the number of male and female students (grouping and aggregation functions)
 
--- 查询课程编号为1111的课程的平均成绩(筛选和聚合函数)
+-- Query the average grade of the course numbered 1111 (filtering and aggregation functions)
 
--- 查询学号为1001的学生所有课程的平均分(筛选和聚合函数)
+-- Query the average score of all courses of the student whose student number is 1001 (filtering and aggregation functions)
 
--- 查询每个学生的学号和平均成绩(分组和聚合函数)
+-- Query the student number and average grade of each student (grouping and aggregation functions)
 
--- 查询平均成绩大于等于90分的学生的学号和平均成绩
+-- Query the student number and average grade of students whose average grade is greater than or equal to 90
 
--- 查询年龄最大的学生的姓名(子查询)
+-- Query the name of the oldest student (subquery)
 
--- 查询年龄最大的学生姓名和年龄(子查询+运算)
+-- Query the name and age of the oldest student (subquery + operation)
 
--- 查询选了两门以上的课程的学生姓名(子查询/分组条件/集合运算)
+-- Query the names of students who have chosen more than two courses (subquery/group condition/set operation)
 
--- 查询学生姓名、课程名称以及成绩(连接查询)
+-- Query student name, course name and grade (connection query)
 
--- 查询选课学生的姓名和平均成绩(子查询和连接查询)
+-- Query the names and average grades of students enrolled in courses (sub-query and join query)
 
--- 查询每个学生的姓名和选课数量(左外连接和子查询)
+-- Query each student's name and number of courses (left outer join and subquery)

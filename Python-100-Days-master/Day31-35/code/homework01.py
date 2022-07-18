@@ -1,8 +1,8 @@
-# 经典递归求解问题:
-# 1. 迷宫寻路
-# 2. 汉诺塔(梵塔)
-# 3. 骑士周游
-# 4. 八皇后
+# Classic recursive solution to the problem:
+# 1. Maze Pathfinding
+# 2. Hanoi Tower (Vatican Tower)
+# 3. The Knights Tour
+# 4. Eight Queens
 
 
 def f(n: int, m=1) -> int:
@@ -41,7 +41,7 @@ def list_depth(items: list) -> int:
 
 
 def main():
-    mylist = [1, ['a', ['b', ['c']]],[100, [200, 300, [400, [500, [600, [700]]]]]]] 
+    mylist = [1, ['a', ['b', ['c']]],[100, [200, 300, [400, [500, [600, [700]]]]]]]
     thylist = [[], [[[]]], [[], []]]
     print(list_depth(mylist))
     print(list_depth(thylist))
