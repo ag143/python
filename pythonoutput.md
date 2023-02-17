@@ -1,4 +1,4 @@
-# python outputoutput from github
+{"name": "C:\\Users\\manjunath.babu\\work\\repo\\TFM\\SFC-2936\\gcp\\nonprod\\g02\\", "type": "file"}
 # Array output
 
 ['Ford', 'Volvo', 'BMW']
@@ -26,7 +26,7 @@ s1
 3.0
 # date and time operations 
 # using Python Date functions
-2023-02-17 11:26:55.246664
+2023-02-17 11:35:10.699869
 # ####################
 2023
 Friday
