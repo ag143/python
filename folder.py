@@ -1,5 +1,5 @@
 import os
-# import json
+import json
 
 def path_to_dict(path):
     d = {'name': os.path.basename(path)}
