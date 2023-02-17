@@ -1,4 +1,4 @@
-{"name": ".\\output\\", "type": "file"}
+{"name": "output", "type": "file"}
 # Array output
 
 ['Ford', 'Volvo', 'BMW']
@@ -26,7 +26,7 @@ s1
 3.0
 # date and time operations 
 # using Python Date functions
-2023-02-17 11:45:29.253301
+2023-02-17 11:48:01.314137
 # ####################
 2023
 Friday
