@@ -39,7 +39,7 @@ jobs:
           echo test, and deploy your project.
           python -V
           python3 introduction.py >pythonoutput.md
-          tree /Output
+          tree Output
           python3 folder.py >pythonoutput.md
           python3 array.py >> pythonoutput.md
           python3 camelcasetest.py >>pythonoutput.md
