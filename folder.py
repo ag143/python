@@ -11,4 +11,4 @@ def path_to_dict(path):
         d['type'] = "file"
     return d
 
-print (json.dumps(path_to_dict('/home/runner/work/python/python/output')))
+print (json.dumps(path_to_dict('/home/runner/work/python/python/output/')))
