@@ -40,7 +40,7 @@ jobs:
           echo test, and deploy your project.
           python -V
           cd ..
-          cat introduction.py
+          cat /home/runner/work/python/python/introduction.py
           python3 introduction.py >pythonoutput.md
           tree Output
           python3 folder.py >pythonoutput.md
