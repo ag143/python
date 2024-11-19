@@ -33,7 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           pwd
-          ll
+          ls -a
           git config --global user.email "ag14341@gmail.com"
           git config --global user.name "ag143"
           echo Add other actions to build,
