@@ -41,7 +41,7 @@ jobs:
           python -V
           cd ..
           cat /home/runner/work/python/python/introduction.py
-          python3 introduction.py >pythonoutput.md
+          python3 /home/runner/work/python/python/introduction.py >pythonoutput.md
           tree Output
           python3 /home/runner/work/python/python/folder.py >pythonoutput.md
           python3 /home/runner/work/python/python/array.py >> pythonoutput.md
