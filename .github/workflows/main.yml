@@ -42,7 +42,7 @@ jobs:
           cd ..
           chmod +w /home/runner/work/python/python/pythonoutput.md
           cat /home/runner/work/python/python/introduction.py
-          chmod +rwx /home/runner/work/python/python/introduction.py >
+          chmod +rwx /home/runner/work/python/python/introduction.py 
           python3 /home/runner/work/python/python/introduction.py >/home/runner/work/python/python/pythonoutput.md
           tree Output
           python3 /home/runner/work/python/python/folder.py >pythonoutput.md
