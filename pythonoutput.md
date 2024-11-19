@@ -1,3 +1,4 @@
+# python outputoutput from github
 {"name": "", "type": "directory", "children": [{"name": "02_Introduction", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "07_ErrorsExceptions", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "test.html", "type": "file"}, {"name": "10_Miscellaneous", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "03_Controlstatements", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "04_DataStructures", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "05_Modules", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "09_StandardLibrary", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "08_Classes", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "readme.md", "type": "file"}, {"name": "06_IO", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}, {"name": "01_setup", "type": "directory", "children": [{"name": "readme.md", "type": "file"}]}]}
 # Array output
 
@@ -26,7 +27,7 @@ s1
 3.0
 # date and time operations 
 # using Python Date functions
-2024-11-19 01:36:59.995838
+2024-11-19 01:39:28.882951
 # ####################
 2024
 Tuesday
