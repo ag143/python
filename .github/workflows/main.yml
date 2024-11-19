@@ -46,7 +46,7 @@ jobs:
           pwd
           python3 /home/runner/work/python/python/introduction.py >/home/runner/work/python/python/pythonoutput.md
           tree Output
-          python3 /home/runner/work/python/python/folder.py >pythonoutput.md
+          python3 /home/runner/work/python/python/folder.py >>pythonoutput.md
           python3 /home/runner/work/python/python/array.py >> pythonoutput.md
           python3 /home/runner/work/python/python/camelcasetest.py >>pythonoutput.md
           python3 /home/runner/work/python/python/casting.py >>pythonoutput.md
